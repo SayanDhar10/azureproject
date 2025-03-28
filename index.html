@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to My Web Page</header>
+    <h2>Hello, World!</h2>
+    <p>This is a simple webpage with HTML, CSS, and JavaScript.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = "You clicked the button!";
+        }
+    </script>
+</body>
+</html>
